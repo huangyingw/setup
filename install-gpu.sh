@@ -3,14 +3,6 @@ SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-## This script is designed to work with ubuntu 16.04 LTS
-#
-## ensure system is updated and has basic build tools
-#apt-get update
-#apt-get --assume-yes upgrade
-#apt-get --assume-yes install tmux build-essential gcc g++ make binutils
-#apt-get --assume-yes install software-properties-common
-#
 ## download and install GPU drivers
 #if [ ! -f "cuda-repo-ubuntu1604_8.0.44-1_amd64.deb" ]
 #then
@@ -18,10 +10,6 @@ cd "$SCRIPTPATH"
 #fi 
 #
 ##dpkg -i cuda-repo-ubuntu1604_8.0.44-1_amd64.deb
-#add-apt-repository ppa:graphics-drivers/ppa -y
-#apt-get update
-#apt-get -y install $(ubuntu-drivers devices|awk '/recommended/{print $3}')
-#apt-get update
 #apt-get -y install cuda
 #modprobe nvidia
 #nvidia-smi

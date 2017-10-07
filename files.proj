@@ -1,3 +1,7 @@
+"./.gitconfig"
+"./copy.sh"
+"./deploy.list"
+"./deploy.sh"
 "./includefile.conf"
 "./install-gpu.sh"
 "./prunefile.conf"

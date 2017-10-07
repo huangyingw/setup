@@ -1,0 +1,8 @@
+[remote "origin"]
+    url = git@github.com:huangyingw/setup.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[push]
+    remote = origin
+[gsync]
+    remote = origin
+    branch = master

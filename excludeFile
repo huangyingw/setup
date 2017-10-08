@@ -1,3 +1,4 @@
 *.findresult
 *.sw[a-z]
 .git
+installer/cuda_8.0.61_375.26_linux-run

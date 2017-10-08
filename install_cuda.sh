@@ -3,7 +3,6 @@ SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-
 apt-get install -y \
     build-essential \
     build-essential \

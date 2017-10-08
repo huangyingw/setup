@@ -8,3 +8,6 @@ cd "$SCRIPTPATH"
 #./install_cuda.sh
 ./install_anaconda2.sh
 ./install_theano.sh
+./install_keras.sh
+./install_cudnn.sh
+./install_jupyter.sh

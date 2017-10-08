@@ -29,5 +29,5 @@ cp ./etc/ld.so.conf.d/cuda.conf  /etc/ld.so.conf.d/cuda.conf \
     && ldconfig
 
 cd /media/volgrp/NVIDIA_CUDA-8.0_Samples/ \
-    && make -j \
-    && ./bin/x86_64/linux/release/deviceQuery
+    && make -j
+./bin/x86_64/linux/release/deviceQuery

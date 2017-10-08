@@ -5,4 +5,4 @@ cd "$SCRIPTPATH"
 
 ./install_basic.sh
 ./install_driver.sh
-./install_driver.sh
+./install_cuda.sh

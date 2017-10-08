@@ -7,3 +7,4 @@ cd "$SCRIPTPATH"
 #./install_driver.sh
 #./install_cuda.sh
 ./install_anaconda2.sh
+./install_theano.sh

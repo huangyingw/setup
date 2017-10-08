@@ -5,4 +5,5 @@ cd "$SCRIPTPATH"
 
 #./install_basic.sh
 #./install_driver.sh
-./install_cuda.sh
+#./install_cuda.sh
+./install_anaconda2.sh

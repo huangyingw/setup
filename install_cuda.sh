@@ -5,21 +5,23 @@ cd "$SCRIPTPATH"
 
 
 apt-get install -y \
-        build-essential \
-        build-essential \
-        freeglut3-dev \
-        freeglut3-dev \
-        libgl1-mesa-dev \
-        libgl1-mesa-glx \
-        libglu1-mesa \
-        libglu1-mesa-dev \
-        libglu1-mesa-dev \
-        libx11-dev \
-        libxi-dev \
-        libxi-dev \
-        libxmu-dev \
-        libxmu-dev \
-        nvidia-cuda-toolkit
+    build-essential \
+    build-essential \
+    freeglut3-dev \
+    freeglut3-dev \
+    libgl1-mesa-dev \
+    libgl1-mesa-glx \
+    libglu1-mesa \
+    libglu1-mesa-dev \
+    libglu1-mesa-dev \
+    libx11-dev \
+    libxi-dev \
+    libxi-dev \
+    libxmu-dev \
+    libxmu-dev \
+    nvidia-cuda-toolkit
+rm -fr /media/volgrp/NVIDIA_CUDA-*
+sh /usr/local/cuda/bin/uninstall_cuda_*.pl
 sh ./installer/cuda_8.0.61_375.26_linux-run  --silent --toolkit --samples --samplespath=/media/volgrp --tmpdir=/media/volgrp/temp/
 cp ./etc/profile /etc/profile \
     && source /etc/profile

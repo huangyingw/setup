@@ -6,7 +6,7 @@ cd "$SCRIPTPATH"
 copyDir="~/myproject/git/AI/setup"
 while read ss
 do
-    #ssh -n $ss "apt-get update && apt-get install realpath"
+    ssh -n $ss "apt-get update && apt-get install realpath"
     ./copy.sh "$ss" "$copyDir"
     ssh -n $ss "~/myproject/git/AI/setup/setup.sh"
 done < deploy.list

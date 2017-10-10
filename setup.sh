@@ -10,4 +10,5 @@ cd "$SCRIPTPATH"
 . ./install_theano.sh
 . ./install_keras.sh
 . ./install_cudnn.sh
-. ./install_jupyter.sh
+#. ./install_jupyter.sh
+#. ./verify_cuda.sh

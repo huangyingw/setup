@@ -30,3 +30,4 @@ cp ./etc/ld.so.conf.d/cuda.conf  /etc/ld.so.conf.d/cuda.conf \
 cd /media/volgrp/NVIDIA_CUDA-9.0_Samples/ \
     && make -j
 ./bin/x86_64/linux/release/deviceQuery
+cd -

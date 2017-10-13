@@ -6,5 +6,5 @@ cd "$SCRIPTPATH"
 apt-get install -y python-pip python-dev build-essential
 pip install --upgrade pip
 pip install --upgrade virtualenv
-pip install theano
+conda install -y theano
 cp ./.theanorc ~/.theanorc

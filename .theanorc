@@ -5,6 +5,3 @@ floatX = float32
 
 [cuda]
 root = /usr/local/cuda
-
-[lib]
-cnmem=.75

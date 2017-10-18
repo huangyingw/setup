@@ -14,4 +14,5 @@ export PATH="/media/volgrp/anaconda2/bin:$PATH"
 . ./install_keras.sh
 . ./install_cudnn.sh
 . ./install_jupyter.sh
+. ./install_nvidia-reload.sh
 #. ./verify_cuda.sh

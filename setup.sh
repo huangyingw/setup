@@ -12,7 +12,7 @@ export CUDA_HOME=/usr/local/cuda
 export PATH="/media/volgrp/anaconda2/bin:$PATH"
 #. ./install_theano.sh
 #. ./install_keras.sh
-. ./install_tensorflow.sh
+. ./install_pytorch.sh
 #. ./install_cudnn.sh
 #. ./install_jupyter.sh
 #. ./verify_cuda.sh

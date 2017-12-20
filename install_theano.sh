@@ -8,4 +8,4 @@ pip install --upgrade pip
 pip install kaggle-cli
 pip install --upgrade virtualenv
 conda install -y theano
-cp ./.theanorc ~/.theanorc
+ln -fs ~/loadrc/."`hostname`".theanorc  ~/.theanorc

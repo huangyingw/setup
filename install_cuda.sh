@@ -20,9 +20,10 @@ apt-get install -y \
     libxmu-dev \
     nvidia-cuda-toolkit
 rm -fr /media/volgrp/NVIDIA_CUDA-*
+mkdir -p /media/volgrp/usr/local/cuda-8.0
+ln -s /media/volgrp/usr/local/cuda-8.0 /usr/local/cuda-8.0
 /usr/local/cuda/bin/uninstall_cuda_*.pl
 sh ./installer/cuda_8.0.61_375.26_linux-run  --silent --toolkit --samples --samplespath=/media/volgrp --tmpdir=/media/volgrp/temp/
-~/loadrc/bashrc/mklnk.sh /usr/local/cuda-8.0 /media/volgrp/cuda-8.0/
 cp ./etc/profile /etc/profile \
     && source /etc/profile
 cp ./etc/ld.so.conf.d/cuda.conf  /etc/ld.so.conf.d/cuda.conf \

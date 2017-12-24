@@ -24,7 +24,7 @@ mkdir -p /media/volgrp/usr/local/cuda-9.0
 rm -fr /usr/local/cuda-9.0
 ln -fs /media/volgrp/usr/local/cuda-9.0 /usr/local/cuda-9.0
 /usr/local/cuda/bin/uninstall_cuda_*.pl
-sh ./installer/cuda_9.0.176_384.81_linux.run --silent --toolkit --samples --samplespath=/media/volgrp --tmpdir=/media/volgrp/temp/
+sh ./installer/cuda_9.1.85_387.26_linux.run --silent --toolkit --samples --samplespath=/media/volgrp --tmpdir=/media/volgrp/temp/
 cp ./etc/profile /etc/profile \
     && source /etc/profile
 cp ./etc/ld.so.conf.d/cuda.conf  /etc/ld.so.conf.d/cuda.conf \

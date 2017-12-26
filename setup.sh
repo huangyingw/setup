@@ -5,6 +5,7 @@ cd "$SCRIPTPATH"
 
 . ./install_basic.sh
 . ./install_driver.sh
+. ./install_nvidia-reload.sh
 . ./install_cuda.sh
 . ./install_anaconda2.sh
 export PATH="/usr/local/bin:/opt/local/sbin:$PATH"

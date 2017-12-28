@@ -21,6 +21,7 @@
 "./install_jupyter.sh"
 "./install_keras.sh"
 "./install_nvidia-reload.sh"
+"./install_others.sh"
 "./install_pytorch.sh"
 "./install_tensorflow.sh"
 "./install_theano.sh"

@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+
+  fastai-course-1:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    image: huangyingw/fastai-course-1
+    container_name: fastai
+    volumes:
+      - ./courses/:/home/docker/fastai-courses/
+      - ./vgg16.h5:/tmp/.keras/models/vgg16.h5
+    ports:  
+      - "8888:8888"
+  

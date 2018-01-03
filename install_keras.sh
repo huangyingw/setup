@@ -4,6 +4,7 @@ SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
 # install and configure keras
-pip install keras==1.2.2
+pip install keras
 mkdir ~/.keras
+echo 'pwd --> $PWD'
 cp ./.keras/keras.json  ~/.keras/keras.json

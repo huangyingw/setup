@@ -10,6 +10,7 @@ COPY ./install_others.sh /root/setup/
 COPY ./install_cudnn.sh /root/setup/
 COPY ./install_jupyter.sh /root/setup/
 COPY ./verify_cuda.sh /root/setup/
+COPY ./.keras/keras.json  /root/setup/.keras/keras.json
 COPY ./installer/Anaconda2-5.0.1-Linux-x86_64.sh /root/setup/installer/
 
 WORKDIR /root/setup/

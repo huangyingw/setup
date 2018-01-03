@@ -1,7 +1,4 @@
 #!/bin/bash -
-SCRIPT=$(realpath "$0")
-SCRIPTPATH=$(dirname "$SCRIPT")
-cd "$SCRIPTPATH"
 
 # configure jupyter and prompt for password
 jupyter notebook --generate-config

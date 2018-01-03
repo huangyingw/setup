@@ -20,9 +20,9 @@ RUN export PATH="$HOME/anaconda2/bin:$PATH"
 COPY ./entrypoint.sh /entrypoint.sh
 
 
-RUN /bin/bash -c "source ./install_tensorflow.sh"
-RUN /bin/bash -c "source ./install_theano.sh"
-RUN /bin/bash -c "source ./install_keras.sh"
-RUN /bin/bash -c "source ./install_pytorch.sh"
-RUN /bin/bash -c "source ./install_others.sh"
-RUN /bin/bash -c "source ./install_jupyter.sh"
+RUN /bin/bash -c "source install_tensorflow.sh"
+RUN /bin/bash -c "source install_theano.sh"
+RUN /bin/bash -c "source install_keras.sh"
+RUN /bin/bash -c "source install_pytorch.sh"
+RUN /bin/bash -c "source install_others.sh"
+RUN /bin/bash -c "source install_jupyter.sh"

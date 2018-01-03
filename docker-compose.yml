@@ -12,4 +12,4 @@ services:
       - ./vgg16.h5:/tmp/.keras/models/vgg16.h5
     ports:  
       - "8888:8888"
-  
+    command: /bin/sh -c "/entrypoint.sh > /var/logs/containner.log 2>&1"

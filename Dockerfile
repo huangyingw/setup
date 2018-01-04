@@ -13,15 +13,12 @@ COPY ./installer/Anaconda2-5.0.1-Linux-x86_64.sh /root/setup/installer/
 COPY ./.jupyter/jupyter_notebook_config.py /root/setup/.jupyter/
 COPY ./.jupyter/jupyter_notebook_config.json /root/setup/.jupyter/
 COPY ./.jupyter/custom/custom.js /root/setup/.jupyter/
+COPY ./entrypoint.sh /entrypoint.sh
 
 WORKDIR /root/setup/
 RUN /bin/bash -c "source install_anaconda2.sh"
-RUN export PATH="/usr/local/bin:/opt/local/sbin:$PATH"
-RUN export CUDA_HOME=/usr/local/cuda
-RUN export PATH="$HOME/anaconda2/bin:$PATH"
-
-COPY ./entrypoint.sh /entrypoint.sh
-
+ENV CUDA_HOME=/usr/local/cuda
+ENV PATH="$HOME/anaconda2/bin:$PATH"
 
 RUN /bin/bash -c "source install_tensorflow.sh"
 RUN /bin/bash -c "source install_theano.sh"

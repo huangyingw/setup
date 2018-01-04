@@ -18,7 +18,7 @@ COPY ./entrypoint.sh /entrypoint.sh
 WORKDIR /root/setup/
 RUN /bin/bash -c "source install_anaconda2.sh"
 ENV CUDA_HOME=/usr/local/cuda
-ENV PATH="$HOME/anaconda2/bin:$PATH"
+ENV PATH="/root/anaconda2/bin:$PATH"
 
 RUN /bin/bash -c "source install_tensorflow.sh"
 RUN /bin/bash -c "source install_theano.sh"

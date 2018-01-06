@@ -1,5 +1,2 @@
 #!/bin/bash -
-while true
-do
-    :
-done
+jupyter notebook --allow-root

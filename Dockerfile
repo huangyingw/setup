@@ -12,7 +12,7 @@ COPY ./.keras/keras.json  /root/setup/.keras/keras.json
 COPY ./installer/Anaconda2-5.0.1-Linux-x86_64.sh /root/setup/installer/
 COPY ./.jupyter/jupyter_notebook_config.py /root/setup/.jupyter/
 COPY ./.jupyter/jupyter_notebook_config.json /root/setup/.jupyter/
-COPY ./.jupyter/custom/custom.js /root/setup/.jupyter/
+COPY ./.jupyter/custom/custom.js /root/setup/.jupyter/custom/custom.js
 COPY ./entrypoint.sh /entrypoint.sh
 
 WORKDIR /root/setup/

@@ -1,4 +1,4 @@
-FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04
+FROM nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 COPY ./install_anaconda2.sh /root/setup/

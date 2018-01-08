@@ -3,4 +3,4 @@ SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-docker-compose -f ./docker-compose.yml up --build -d
+cp -v ./etc/pm/sleep.d/nvidia-reload /etc/pm/sleep.d/nvidia-reload

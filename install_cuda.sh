@@ -21,13 +21,12 @@ apt-get install -y \
     nvidia-cuda-toolkit
 rm -fr /media/volgrp/NVIDIA_CUDA-*
 /usr/local/cuda/bin/uninstall_cuda_*.pl
-sh ./installer/cuda_9.0.176_384.81_linux.run  --silent --toolkit --samples --samplespath=/media/volgrp --tmpdir=/media/volgrp/temp/
+sh ./installer/cuda_9.1.85_387.26_linux.run --silent --toolkit --samples --samplespath=/media/volgrp --tmpdir=/media/volgrp/temp/
 cp ./etc/profile /etc/profile \
     && source /etc/profile
 cp ./etc/ld.so.conf.d/cuda.conf  /etc/ld.so.conf.d/cuda.conf \
     && ldconfig
 
-#cd /media/volgrp/NVIDIA_CUDA-9.0_Samples/ \
-    #    && make -j
-#./bin/x86_64/linux/release/deviceQuery
-#cd -
+tar xf ./installer/cudnn-9.1-linux-x64-v7.tgz
+cuda/include/*.* /usr/local/cuda/include/
+cuda/lib64/*.* /usr/local/cuda/lib64/

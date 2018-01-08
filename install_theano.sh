@@ -7,5 +7,5 @@ apt-get install -y python-pip python-dev build-essential
 pip install --upgrade pip
 pip install kaggle-cli
 pip install --upgrade virtualenv
-conda install -y theano
+pip install theano
 ln -fs ~/loadrc/."`hostname`".theanorc  ~/.theanorc

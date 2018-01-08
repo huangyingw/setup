@@ -26,6 +26,5 @@
 "./prunefile.conf"
 "./prunefix.conf"
 "./run.sh"
-"./setup.sh"
 "./usr/NX/etc/node.cfg"
 "./verify_cuda.sh"

@@ -19,9 +19,6 @@ apt-get install -y \
     libxmu-dev \
     libxmu-dev \
     nvidia-cuda-toolkit
-mkdir -p /media/volgrp/usr/local/cuda-9.1
-rm /usr/local/cuda-9.1
-ln -fs /media/volgrp/usr/local/cuda-9.1 /usr/local/cuda-9.1
 /usr/local/cuda/bin/uninstall_cuda_*.pl
 sh ./installer/cuda_9.1.85_387.26_linux.run --silent --toolkit --samples --samplespath=/media/volgrp --tmpdir=/media/volgrp/temp/
 cp ./etc/profile /etc/profile \

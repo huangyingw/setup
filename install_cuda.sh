@@ -27,6 +27,7 @@ cp ./etc/profile /etc/profile \
 cp ./etc/ld.so.conf.d/cuda.conf  /etc/ld.so.conf.d/cuda.conf \
     && ldconfig
 
-tar xf ./installer/cudnn-9.1-linux-x64-v7.tgz
-cuda/include/*.* /usr/local/cuda/include/
-cuda/lib64/*.* /usr/local/cuda/lib64/
+cd /media/volgrp/NVIDIA_CUDA-9.1_Samples/ \
+    && make -j
+./bin/x86_64/linux/release/deviceQuery
+cd -

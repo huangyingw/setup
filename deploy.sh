@@ -8,5 +8,5 @@ while read ss
 do
     #ssh -n $ss "apt-get update && apt-get install realpath"
     ./copy.sh "$ss" "$copyDir"
-    ssh -n $ss "~/myproject/git/AI/setup/setup.sh"
+    ssh -n $ss "$copyDir/setup.sh"
 done < deploy.list

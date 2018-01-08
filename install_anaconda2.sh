@@ -10,8 +10,4 @@ source $HOME/.bashrc
 export PATH="/usr/local/bin:/opt/local/sbin:$PATH"
 export CUDA_HOME=/usr/local/cuda
 export PATH="$HOME/anaconda2/bin:$PATH"
-# added by Anaconda2 4.4.0 installer
-export PATH="/media/volgrp/anaconda2/bin:$PATH"
-conda install -y bcolz
-conda install -y -c menpo ffmpeg
 conda upgrade -y --all

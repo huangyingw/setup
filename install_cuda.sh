@@ -28,7 +28,3 @@ cp ./etc/profile /etc/profile \
     && source /etc/profile
 cp ./etc/ld.so.conf.d/cuda.conf  /etc/ld.so.conf.d/cuda.conf \
     && ldconfig
-
-cd /media/volgrp/NVIDIA_CUDA-9.1_Samples/ \
-    #    && make -j
-#./bin/x86_64/linux/release/deviceQuery

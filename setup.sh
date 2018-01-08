@@ -5,7 +5,6 @@ cd "$SCRIPTPATH"
 
 . ./install_basic.sh
 . ./install_driver.sh
-. ./install_nvidia-reload.sh
 . ./install_cuda.sh
 . ./install_cudnn.sh
 . ./install_anaconda3.sh

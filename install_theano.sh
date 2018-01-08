@@ -8,4 +8,3 @@ pip install --upgrade pip
 pip install kaggle-cli
 pip install --upgrade virtualenv
 pip install theano
-ln -fs ~/loadrc/."`hostname`".theanorc  ~/.theanorc

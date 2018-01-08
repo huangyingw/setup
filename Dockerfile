@@ -1,7 +1,7 @@
 FROM nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-COPY ./install_anaconda2.sh /root/setup/
+COPY ./install_anaconda3.sh /root/setup/
 COPY ./install_tensorflow.sh /root/setup/
 COPY ./install_theano.sh /root/setup/
 COPY ./install_keras.sh /root/setup/

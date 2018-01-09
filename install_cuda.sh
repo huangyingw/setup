@@ -21,6 +21,7 @@ apt-get install -y \
     nvidia-cuda-toolkit
 rm -fr /media/volgrp/NVIDIA_CUDA-*
 /usr/local/cuda/bin/uninstall_cuda_*.pl
+mkdir -p /media/volgrp/temp/
 sh ./installer/cuda_9.1.85_387.26_linux.run --silent --toolkit --samples --samplespath=/media/volgrp --tmpdir=/media/volgrp/temp/
 cp ./etc/profile /etc/profile \
     && source /etc/profile

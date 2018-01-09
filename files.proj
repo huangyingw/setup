@@ -23,6 +23,7 @@
 "./install_pytorch.sh"
 "./install_tensorflow.sh"
 "./install_theano.sh"
+"./paperspace.sh"
 "./prunefile.conf"
 "./prunefix.conf"
 "./setup.sh"

@@ -16,4 +16,3 @@ export PATH="$HOME/anaconda3/bin:$PATH"
 . ./install_pytorch.sh
 . ./install_others.sh
 . ./install_jupyter.sh
-. ./verify_cuda.sh

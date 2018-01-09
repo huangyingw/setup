@@ -7,11 +7,13 @@
     remote = origin
     branch = master
 [gdif]
+    ignore = .gitconfig
     ignore = Dockerfile
     ignore = docker-compose.yml
     ignore = entrypoint.sh
-    ignore = run.sh
     ignore = install_basic.sh
     ignore = install_cuda.sh
     ignore = install_cudnn.sh
     ignore = install_driver.sh
+    ignore = run.sh
+    ignore = setup.sh

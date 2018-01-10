@@ -16,10 +16,11 @@ COPY ./.jupyter/custom/custom.js /root/setup/.jupyter/custom/custom.js
 COPY ./entrypoint.sh /entrypoint.sh
 
 WORKDIR /root/setup/
-RUN /bin/bash -c "source install_anaconda3.sh"
 ENV CUDA_HOME=/usr/local/cuda
-ENV PATH="/root/anaconda3/bin:$PATH"
+ENV PATH="$HOME/anaconda3/bin:$PATH"
+ENV PATH="/usr/local/bin:/opt/local/sbin:$PATH"
 
+RUN /bin/bash -c "source install_anaconda3.sh"
 RUN /bin/bash -c "source install_tensorflow.sh"
 RUN /bin/bash -c "source install_theano.sh"
 RUN /bin/bash -c "source install_keras.sh"

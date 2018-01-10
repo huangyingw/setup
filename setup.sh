@@ -6,10 +6,10 @@ cd "$SCRIPTPATH"
 . ./install_basic.sh
 . ./install_cuda.sh
 . ./install_cudnn.sh
-. ./install_anaconda3.sh
-export PATH="/usr/local/bin:/opt/local/sbin:$PATH"
 export CUDA_HOME=/usr/local/cuda
 export PATH="$HOME/anaconda3/bin:$PATH"
+export PATH="/usr/local/bin:/opt/local/sbin:$PATH"
+. ./install_anaconda3.sh
 . ./install_tensorflow.sh
 . ./install_theano.sh
 . ./install_keras.sh

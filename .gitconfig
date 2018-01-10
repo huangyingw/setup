@@ -9,6 +9,7 @@
 [gdif]
     ignore = .gitconfig
     ignore = Dockerfile
+    ignore = deploy.list
     ignore = deploy.sh
     ignore = docker-compose.yml
     ignore = entrypoint.sh

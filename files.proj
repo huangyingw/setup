@@ -11,7 +11,6 @@
 "./docker-compose.yml"
 "./entrypoint.sh"
 "./etc/ld.so.conf.d/cuda.conf"
-"./etc/modprobe.d/blacklist.conf"
 "./etc/profile"
 "./excludeFile"
 "./includefile.conf"

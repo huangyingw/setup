@@ -9,7 +9,6 @@ WORKDIR /root/setup/
 
 RUN bash "./installer/Anaconda3-5.0.1-Linux-x86_64.sh" -u -b
 RUN apt-get update && apt-get install -y python3-pip git
-RUN pip install --upgrade pip
 ENV CUDA_HOME=/usr/local/cuda
 ENV PATH="/root/anaconda3/bin:$PATH"
 ENV PATH="/usr/local/bin:/opt/local/sbin:$PATH"

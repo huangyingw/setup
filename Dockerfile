@@ -1,29 +1,22 @@
 FROM nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-COPY ./install_anaconda3.sh /root/setup/
-COPY ./install_tensorflow.sh /root/setup/
-COPY ./install_theano.sh /root/setup/
-COPY ./install_keras.sh /root/setup/
-COPY ./install_pytorch.sh /root/setup/
-COPY ./install_others.sh /root/setup/
-COPY ./install_jupyter.sh /root/setup/
-COPY ./.keras/keras.json  /root/setup/.keras/keras.json
 COPY ./installer/Anaconda3-5.0.1-Linux-x86_64.sh /root/setup/installer/
-COPY ./.jupyter/jupyter_notebook_config.py /root/setup/.jupyter/
-COPY ./.jupyter/jupyter_notebook_config.json /root/setup/.jupyter/
-COPY ./.jupyter/custom/custom.js /root/setup/.jupyter/custom/custom.js
+COPY ./environment.yml /root/setup/
 COPY ./entrypoint.sh /entrypoint.sh
 
 WORKDIR /root/setup/
-ENV CUDA_HOME=/usr/local/cuda
-ENV PATH="$HOME/anaconda3/bin:$PATH"
-ENV PATH="/usr/local/bin:/opt/local/sbin:$PATH"
 
-RUN /bin/bash -c "source install_anaconda3.sh"
-RUN /bin/bash -c "source install_tensorflow.sh"
-RUN /bin/bash -c "source install_theano.sh"
-RUN /bin/bash -c "source install_keras.sh"
-RUN /bin/bash -c "source install_pytorch.sh"
-RUN /bin/bash -c "source install_others.sh"
-RUN /bin/bash -c "source install_jupyter.sh"
+RUN bash "./installer/Anaconda3-5.0.1-Linux-x86_64.sh" -u -b
+RUN apt-get update && apt-get install -y python3-pip python-dev build-essential
+RUN pip3 install --upgrade pip3
+RUN pip3 install --upgrade virtualenv
+RUN /bin/bash -c "source install_fastai.sh"
+RUN export CUDA_HOME=/usr/local/cuda
+RUN export PATH="/root/anaconda3/bin:$PATH"
+RUN export PATH="/usr/local/bin:/opt/local/sbin:$PATH"
+RUN conda env update
+RUN source activate fastai
+COPY ./.jupyter/jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py
+COPY ./.jupyter/jupyter_notebook_config.json /root/.jupyter/jupyter_notebook_config.json
+COPY ./.jupyter/custom/custom.js /root/.jupyter/custom/custom.js

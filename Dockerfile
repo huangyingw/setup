@@ -8,7 +8,7 @@ COPY ./entrypoint.sh /entrypoint.sh
 WORKDIR /root/setup/
 
 RUN bash "./installer/Anaconda3-5.0.1-Linux-x86_64.sh" -u -b
-RUN apt-get update && apt-get install -y python3-pip
+RUN apt-get update && apt-get install -y python3-pip git
 RUN pip3 install --upgrade pip setuptools
 ENV CUDA_HOME=/usr/local/cuda
 ENV PATH="/root/anaconda3/bin:$PATH"

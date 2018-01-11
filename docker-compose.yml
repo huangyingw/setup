@@ -8,8 +8,9 @@ services:
         dockerfile: Dockerfile
     image: huangyingw/fastai
     volumes:
-      - ../fastai/courses/:/home/docker/fastai-courses/
-      - ./vgg16.h5:/tmp/.keras/models/vgg16.h5
+      - ./.jupyter/jupyter_notebook_config.py:/root/.jupyter/jupyter_notebook_config.py
+      - ./.jupyter/jupyter_notebook_config.json:/root/.jupyter/jupyter_notebook_config.json
+      - ./.jupyter/custom/custom.js:/root/.jupyter/custom/custom.js
     ports:  
       - "8888:8888"
     command: /bin/sh -c "/entrypoint.sh"

@@ -14,6 +14,4 @@ ENV PATH="/root/anaconda3/bin:$PATH"
 ENV PATH="/usr/local/bin:/opt/local/sbin:$PATH"
 RUN conda env update
 RUN source activate fastai
-COPY ./.jupyter/jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py
-COPY ./.jupyter/jupyter_notebook_config.json /root/.jupyter/jupyter_notebook_config.json
-COPY ./.jupyter/custom/custom.js /root/.jupyter/custom/custom.js
+RUN rm -fr /root/setup/ 

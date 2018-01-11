@@ -10,4 +10,5 @@ cd "$SCRIPTPATH"
 export CUDA_HOME=/usr/local/cuda
 export PATH="$HOME/anaconda3/bin:$PATH"
 export PATH="/usr/local/bin:/opt/local/sbin:$PATH"
-. ./install_jupyter.sh
+. ./install_fastai.sh
+. ./configure_jupyter.sh

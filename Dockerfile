@@ -3,7 +3,6 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 COPY ./installer/Anaconda3-5.0.1-Linux-x86_64.sh /root/setup/installer/
 COPY ./install_anaconda3.sh /root/setup/
-COPY ./install_others.sh /root/setup/
 COPY ./install_fastai.sh /root/setup/
 COPY ./environment.yml /root/setup/
 COPY ./entrypoint.sh /entrypoint.sh

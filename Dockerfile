@@ -19,6 +19,6 @@ WORKDIR /root/setup/
 
 RUN ./install_anaconda3.sh
 ENV CUDA_HOME=/usr/local/cuda
-ENV PATH="$HOME/anaconda3/bin:$PATH"
+ENV PATH="/root/anaconda3/bin:$PATH"
 ENV PATH="/usr/local/bin:/opt/local/sbin:$PATH"
 RUN ./install_tensorflow.sh

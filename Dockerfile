@@ -9,8 +9,8 @@ COPY ./environment.yml /root/setup/
 COPY ./entrypoint.sh /entrypoint.sh
 
 WORKDIR /root/setup/
+RUN apt-get update && apt-get install -y python3-pip git realpath
 RUN ./install_anaconda3.sh
-RUN ./install_others.sh
 ENV CUDA_HOME=/usr/local/cuda
 ENV PATH="/root/anaconda3/bin:$PATH"
 ENV PATH="/usr/local/bin:/opt/local/sbin:$PATH"

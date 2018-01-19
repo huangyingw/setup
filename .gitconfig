@@ -11,5 +11,6 @@
     ignore = docker-compose.yml
     ignore = entrypoint.sh
     ignore = run.sh
+    ignore = deploy.list
 [commit]
-	message = n
+    message = n

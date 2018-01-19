@@ -3,32 +3,7 @@ SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-apt-get install -y \
-    build-essential \
-    build-essential \
-    freeglut3-dev \
-    freeglut3-dev \
-    libgl1-mesa-dev \
-    libgl1-mesa-glx \
-    libglu1-mesa \
-    libglu1-mesa-dev \
-    libglu1-mesa-dev \
-    libx11-dev \
-    libxi-dev \
-    libxi-dev \
-    libxmu-dev \
-    libxmu-dev \
-    nvidia-cuda-toolkit
-rm -fr /media/volgrp/NVIDIA_CUDA-*
-/usr/local/cuda/bin/uninstall_cuda_*.pl
-mkdir -p /media/volgrp/temp/
-sh ./installer/cuda_9.1.85_387.26_linux.run --silent --toolkit --samples --samplespath=/media/volgrp --tmpdir=/media/volgrp/temp/
-cp ./etc/profile /etc/profile \
-    && source /etc/profile
-cp ./etc/ld.so.conf.d/cuda.conf  /etc/ld.so.conf.d/cuda.conf \
-    && ldconfig
-
-cd /media/volgrp/NVIDIA_CUDA-9.1_Samples/ \
-    && make -j
-./bin/x86_64/linux/release/deviceQuery
-cd -
+dpkg -i ./installer/cuda-repo-ubuntu1704-9-1-local_9.1.85-1_amd64.deb
+apt-key add /var/cuda-repo-9-1-local/7fa2af80.pub
+apt-get update
+apt-get install -y cuda

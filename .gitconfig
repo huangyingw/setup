@@ -6,3 +6,10 @@
 [gsync]
     remote = origin
     branch = master
+[gdif]
+    ignore = Dockerfile
+    ignore = docker-compose.yml
+    ignore = entrypoint.sh
+    ignore = run.sh
+[commit]
+	message = n

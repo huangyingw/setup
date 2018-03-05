@@ -4,6 +4,7 @@ SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
 . ./install_basic.sh
+. ./install_gpu.sh
 . ./install_cuda.sh
 . ./install_cudnn.sh
 . ./install_anaconda3.sh

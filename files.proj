@@ -17,7 +17,6 @@
 "./includefile.conf"
 "./install_anaconda3.sh"
 "./install_fastai.sh"
-"./install_others.sh"
 "./paperspace.sh"
 "./prunefile.conf"
 "./prunefix.conf"

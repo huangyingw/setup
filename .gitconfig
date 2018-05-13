@@ -19,3 +19,5 @@
     ignore = install_driver.sh
     ignore = run.sh
     ignore = setup.sh
+[commit]
+    message = n

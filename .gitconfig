@@ -21,3 +21,5 @@
     ignore = setup.sh
 [commit]
     message = n
+[vrun]
+    silent = false

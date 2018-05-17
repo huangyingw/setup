@@ -8,7 +8,6 @@ dependencies:
     - scipy
     - cuda90
     - cudnn
-    - cython 
     - numpy
     - pillow
     - jpeg

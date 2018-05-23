@@ -14,6 +14,6 @@
     ignore = deploy.list
 [commit]
     message = n
-[branch "u1604/cuda_9.1/fastai"]
+[branch "u1604/cuda_9.2/fastai"]
     remote = origin
-    merge = refs/heads/u1604/cuda_9.1/fastai
+    merge = refs/heads/u1604/cuda_9.2/fastai

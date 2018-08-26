@@ -17,3 +17,5 @@
 [branch "u1604/cuda_9.2/fastai"]
     remote = origin
     merge = refs/heads/u1604/cuda_9.2/fastai
+[deploy]
+    target = server:~/myproject/git/AI/setup

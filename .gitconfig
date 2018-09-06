@@ -18,4 +18,5 @@
     remote = origin
     merge = refs/heads/u1604/cuda_9.2/fastai
 [deploy]
-    target = server:~/myproject/git/AI/setup
+    host = mini
+    path = ~/myproject/git/AI/setup

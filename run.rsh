@@ -3,4 +3,4 @@ SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-docker-compose -f ./docker-compose.yml up --build -d
+docker-compose up --build -d

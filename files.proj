@@ -14,4 +14,4 @@
 "./install_anaconda3.sh"
 "./prunefile.conf"
 "./prunefix.conf"
-"./run.sh"
+"./run.rsh"

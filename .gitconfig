@@ -23,3 +23,7 @@
     message = n
 [vrun]
     silent = false
+    async = false
+[deploy]
+    host = mini
+    path = ~/myproject/git/AI/setup

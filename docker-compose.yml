@@ -11,6 +11,8 @@ services:
         - ./.jupyter/jupyter_notebook_config.json:/root/.jupyter/jupyter_notebook_config.json
         - ./.jupyter/custom/custom.js:/root/.jupyter/custom/custom.js
         - ../fastai/fastai/:/root/fastai/
+        - ./anaconda3/:/root/anaconda3.bak/
+        - ./.bashrc:/root/.bashrc
     ports:  
         - "8888:8888"
     command: /bin/sh -c "/entrypoint.sh"

@@ -1,4 +1,5 @@
 "./.bashrc"
+"./.env"
 "./.gitconfig"
 "./.gitignore"
 "./.jupyter/custom/custom.js"

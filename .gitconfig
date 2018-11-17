@@ -25,5 +25,5 @@
     silent = false
     async = false
 [deploy]
-    host = mini
+    host = server
     path = ~/myproject/git/AI/setup

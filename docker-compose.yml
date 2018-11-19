@@ -13,6 +13,7 @@ services:
         - ../fastai/fastai/:/root/fastai/
         - ./anaconda3/:/root/anaconda3/
         - ./.bashrc:/root/.bashrc
+        - ./var/logs/:/var/logs/
     ports:  
         - "8888:8888"
-    command: /bin/sh -c "/entrypoint.sh"
+    command: /bin/sh -c "/entrypoint.sh 2>&1 | tee /var/logs/containner.log"

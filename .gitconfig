@@ -18,5 +18,8 @@
     remote = origin
     merge = refs/heads/u1604/cuda_9.2/fastai
 [deploy]
-    host = mini
+    host = server
     path = ~/myproject/git/AI/setup
+[vrun]
+    silent = false
+    async = false

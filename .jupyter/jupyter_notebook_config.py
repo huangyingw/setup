@@ -159,7 +159,7 @@
 #c.NotebookApp.iopub_msg_rate_limit = 1000
 
 ## The IP address the notebook server will listen on.
-c.NotebookApp.ip = '*'
+#c.NotebookApp.ip = '*'
 
 ## Supply extra arguments that will be passed to Jinja environment.
 #c.NotebookApp.jinja_environment_options = {}
@@ -604,5 +604,5 @@ c.NotebookApp.ip = '*'
 #  By default, all installed kernels are allowed.
 #c.KernelSpecManager.whitelist = set([])
 c.NotebookApp.password = u'sha1:fa1c9b36d533:1e6a9831a21fda530749edfb2038f77d0de62579'
-c.NotebookApp.ip = '*'
+c.NotebookApp.ip = '0.0.0.0'
 c.NotebookApp.open_browser = False

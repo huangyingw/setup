@@ -29,5 +29,5 @@
 "./prunefile.conf"
 "./prunefix.conf"
 "./setup.cfg"
-"./setup.rsh"
+"./setup.sh"
 "./verify_cuda.sh"

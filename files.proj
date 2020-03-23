@@ -7,6 +7,8 @@
 "./.keras/keras.json"
 "./configure_jupyter.sh"
 "./copy.sh"
+"./cuda/NVIDIA_SLA_cuDNN_Support.txt"
+"./cuda/include/cudnn.h"
 "./deploy.list"
 "./deploy.sh"
 "./environment.yml"

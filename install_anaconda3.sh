@@ -3,4 +3,6 @@ SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-bash "./installer/Anaconda3-5.3.1-Linux-x86_64.sh" -u -b
+
+wget -nc https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh 
+bash Anaconda3-2020.02-Linux-x86_64.sh -u -b

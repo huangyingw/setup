@@ -606,3 +606,4 @@ c.NotebookApp.allow_root = True
 c.NotebookApp.password = u'sha1:fa1c9b36d533:1e6a9831a21fda530749edfb2038f77d0de62579'
 c.NotebookApp.ip = '0.0.0.0'
 c.NotebookApp.open_browser = False
+c.NotebookApp.contents_manager_class = "jupytext.TextFileContentsManager"

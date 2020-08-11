@@ -3,6 +3,7 @@
 "./.jupyter/custom/custom.js"
 "./.jupyter/jupyter_notebook_config.json"
 "./.jupyter/jupyter_notebook_config.py"
+"./.jupyter/running.time"
 "./.kaggle/kaggle.json"
 "./.keras/keras.json"
 "./configure_jupyter.sh"

@@ -5,7 +5,7 @@ define([
     function(IPython, events) {
         events.on("notebook_loaded.Notebook",
             function() {
-                IPython.notebook.set_autosave_interval(60000); //in milliseconds
+                IPython.notebook.set_autosave_interval(30000); //in milliseconds
             }
         );
         //may include additional events.on() statements

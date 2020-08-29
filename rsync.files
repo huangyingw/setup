@@ -2,11 +2,9 @@
 ./.gitignore
 ./.ipython/profile_default/startup/disable-warnings.py
 ./.jupyter/custom/custom.js
-./.jupyter/custom/running.time
 ./.jupyter/custom/startup.py
 ./.jupyter/jupyter_notebook_config.json
 ./.jupyter/jupyter_notebook_config.py
-./.jupyter/running.time
 ./.kaggle/kaggle.json
 ./.keras/keras.json
 ./configure_jupyter.sh
@@ -29,7 +27,6 @@
 ./paperspace.sh
 ./prunefile.conf
 ./prunefix.conf
-./rsync.files
 ./setup.cfg
 ./setup.sh
 ./verify_cuda.sh

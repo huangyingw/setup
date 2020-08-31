@@ -10,3 +10,4 @@ mkdir -p $HOME/.jupyter/custom/
 cp -v ./.jupyter/custom/custom.js $HOME/.jupyter/custom/custom.js
 # cp -v ./.jupyter/custom/startup.py $HOME/.jupyter/custom/startup.py
 cp -v ./.ipython/profile_default/startup/disable-warnings.py $HOME/.ipython/profile_default/startup/disable-warnings.py
+cp -v ./.jupyter/.jupytext.yml $HOME/

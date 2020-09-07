@@ -1,6 +1,7 @@
 ./.gitconfig
 ./.gitignore
 ./.ipython/profile_default/startup/disable-warnings.py
+./.jupyter/.jupytext.yml
 ./.jupyter/custom/custom.js
 ./.jupyter/custom/startup.py
 ./.jupyter/jupyter_notebook_config.json

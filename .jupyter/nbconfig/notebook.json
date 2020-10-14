@@ -3,7 +3,8 @@
         "command": {
             "bind": {
                 "ctrl-a": "jupyter-notebook:run-all-cells-above",
-                "Ctrl-b": "jupyter-notebook:run-all-cells-below"
+                "Ctrl-b": "jupyter-notebook:run-all-cells-below",
+                "ctrl-s": "jupyter-notebook:split-cell-at-cursor"
             }
         }
     }

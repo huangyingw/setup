@@ -1,0 +1,2 @@
+Having the exact same problem on my desktop (which has an Nvidia RTX 2070 Super GPU, in any case, so I strongly suspect that’s not the decisive variable here).
+I did follow the instructions at the dtreeviz GitHub page – i.e. I uninstalled my Anaconda versions of graphviz and python-graphviz before installing the pip version of dtreeviz. Perhaps there’s something wrong with the version of graphviz used with dtreeviz?

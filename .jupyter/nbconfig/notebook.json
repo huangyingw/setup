@@ -1,0 +1,10 @@
+{
+    "keys": {
+        "command": {
+            "bind": {
+                "ctrl-a": "jupyter-notebook:run-all-cells-above",
+                "Ctrl-b": "jupyter-notebook:run-all-cells-below"
+            }
+        }
+    }
+}

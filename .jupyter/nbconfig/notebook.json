@@ -4,7 +4,10 @@
             "bind": {
                 "ctrl-a": "jupyter-notebook:run-all-cells-above",
                 "Ctrl-b": "jupyter-notebook:run-all-cells-below",
-                "ctrl-s": "jupyter-notebook:split-cell-at-cursor"
+                "ctrl-r": "jupyter-notebook:restart-kernel",
+                "f5": "jupyter-notebook:run-all-cells",
+                "f4": "jupyter-notebook:run-all-cells",
+                "f6": "jupyter-notebook:run-all-cells"
             }
         }
     }

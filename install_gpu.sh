@@ -9,3 +9,4 @@ then
 fi
 
 ./install_driver.sh
+./install_nvidia-reload.sh

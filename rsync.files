@@ -27,6 +27,7 @@
 ./install_kaggle.sh
 ./install_nvidia-reload.sh
 ./install_nvidia.sh
+./lib/systemd/system-sleep/nvidia-reload
 ./paperspace.sh
 ./prunefile.conf
 ./prunefix.conf

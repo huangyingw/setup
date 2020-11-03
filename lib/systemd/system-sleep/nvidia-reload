@@ -1,6 +1,8 @@
-case “$1” in
-post)
-sudo rmmod nvidia_uvm
-sudo modprobe nvidia_uvm
-;;
+#!/bin/sh
+
+case $1 in
+    post)
+        rmmod nvidia_uvm
+        modprobe nvidia_uvm
+        ;;
 esac

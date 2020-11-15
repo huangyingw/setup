@@ -25,6 +25,7 @@
 "./paperspace.sh"
 "./prunefile.conf"
 "./prunefix.conf"
+"./rsync.files"
 "./setup.cfg"
 "./setup.sh"
 "./verify_cuda.sh"

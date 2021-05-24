@@ -35,3 +35,4 @@
 "./setup.cfg"
 "./setup.sh"
 "./verify_cuda.sh"
+"u2004.gdio.diff"

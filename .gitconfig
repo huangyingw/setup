@@ -12,14 +12,21 @@
     ignore = entrypoint.sh
     ignore = run.sh
     ignore = deploy.list
-[commit]
-    message = n
+    ignore = .gitconfig
+    ignore = Dockerfile
+    ignore = deploy.list
+    ignore = deploy.sh
+    ignore = docker-compose.yml
+    ignore = entrypoint.sh
+    ignore = install_basic.sh
+    ignore = install_cuda.sh
+    ignore = install_cudnn.sh
+    ignore = install_driver.sh
+    ignore = run.sh
+    ignore = setup.sh
 [branch "u1604/cuda_9.2/fastai"]
     remote = origin
     merge = refs/heads/u1604/cuda_9.2/fastai
 [deploy]
     host = localhost
     path = ~/myproject/git/AI/setup
-[vrun]
-    silent = false
-    async = false

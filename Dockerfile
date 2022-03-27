@@ -1,6 +1,7 @@
-FROM nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
+FROM nvidia/cuda:11.6.0-devel-ubuntu20.04
 
 COPY ./install_anaconda3.sh /root/setup/
+COPY ./fastbook/ /root/setup/fastbook/
 COPY ./entrypoint.sh /entrypoint.sh
 
 WORKDIR /root/setup/
